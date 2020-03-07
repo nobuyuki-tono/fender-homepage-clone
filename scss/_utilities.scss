@@ -1,9 +1,13 @@
 .my-container {
   max-width: 1400px;
-  width: 100%;
-  margin: auto;
+  width: 90%;
+  margin: 0 auto;
 }
 
 .btn {
   text-transform: uppercase;
+
+  &:hover {
+    background-color: rgb(153, 6, 6) !important;
+  }
 }

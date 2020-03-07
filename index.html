@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
       rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <link
+      rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
       integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
       crossorigin="anonymous"
@@ -13,33 +17,140 @@
     <title>Fender - Clone</title>
   </head>
   <body>
-    <header>
+    <header class="header">
       <div class="header-top">
         <ul>
-          <li>FENDER.COM</li>
-          <li>Play</li>
-          <li>TUNE</li>
-          <li>TONE</li>
+          <li class="m-1">FENDER.COM</li>
+          <li class="m-1">PLAY</li>
+          <li class="m-1">TUNE</li>
+          <li class="m-1">TONE</li>
         </ul>
       </div>
 
-      <div class="header-main">
-        <nav class="navbar">
-          <img src="" alt="" />
-          <ul>
-            <li>guitars</li>
-            <li>basses</li>
-            <li>acoustics</li>
-            <li>amps</li>
-            <li>effects pedals</li>
-            <li>audio</li>
-            <li>parts</li>
-            <li>accessories</li>
-            <li>lifestyle</li>
-            <li>squire</li>
-          </ul>
-        </nav>
+      <div class="header-main my-1">
+        <section class="navbar-my">
+          <div>
+            <div class="nav-left">
+              <img class="logo" src="img/logo.png" alt="" />
+              <ul>
+                <li><a href="#">guitars </a></li>
+                <li><a href="#">basses</a></li>
+                <li><a href="#">acoustics</a></li>
+                <li><a href="#">amps</a></li>
+                <li><a href="#">effects pedals</a></li>
+                <li><a href="#">audio</a></li>
+                <li><a href="#">parts</a></li>
+                <li><a href="#">accessories</a></li>
+                <li><a href="#">lifestyle</a></li>
+                <li><a href="#">squire</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="serch-div">
+            <a href="" class="search-btn"
+              ><i class="fas fa-search fa-2x"></i
+            ></a>
+          </div>
+        </section>
       </div>
     </header>
+
+    <section class="showcase-slide">
+      <div class="continaer p-2">
+        <div class="slider">
+          <ul class="slides">
+            <li>
+              <img src="img/slide-img1.jpg" />
+              <!-- random image -->
+              <div class="caption center-align">
+                <p>Never play a fender the same way again</p>
+                <h3 class="light grey-text text-lighten-3">
+                  American ultra Jassmaster
+                </h3>
+                <button class="btn red">Learn More</button>
+              </div>
+            </li>
+            <li>
+              <img src="img/slide-img2.jpg" />
+              <!-- random image -->
+              <div class="caption left-align">
+                <h3>Left Aligned Caption</h3>
+                <h5 class="light grey-text text-lighten-3">
+                  Here's our small slogan.
+                </h5>
+                <button class="btn red">Learn More</button>
+              </div>
+            </li>
+            <li>
+              <img src="img/slide-img3.jpg" />
+              <!-- random image -->
+              <div class="caption right-align">
+                <h3>Right Aligned Caption</h3>
+                <h5 class="light grey-text text-lighten-3">
+                  Here's our small slogan.
+                </h5>
+                <button class="btn red">Learn More</button>
+              </div>
+            </li>
+            <li>
+              <img src="img/slide-img4.jpg" />
+              <!-- random image -->
+              <div class="caption center-align">
+                <h3>This is our big Tagline!</h3>
+                <h5 class="light grey-text text-lighten-3">
+                  Here's our small slogan.
+                </h5>
+                <button class="btn red">Learn More</button>
+              </div>
+            </li>
+            <li>
+              <img src="img/slide-img5.jpg" />
+              <!-- random image -->
+              <div class="caption center-align">
+                <h3>This is our big Tagline!</h3>
+                <h5 class="light grey-text text-lighten-3">
+                  Here's our small slogan.
+                </h5>
+                <button class="btn red">Learn More</button>
+              </div>
+            </li>
+            <li>
+              <img src="img/slide-img6.jpg" />
+              <!-- random image -->
+              <div class="caption center-align">
+                <h3>This is our big Tagline!</h3>
+                <h5 class="light grey-text text-lighten-3">
+                  Here's our small slogan.
+                </h5>
+                <button class="btn red">Learn More</button>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="showcase-grid">
+      .container
+    </section>
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <script>
+      // const slider = document.querySelecor(".slider");
+      // M.Slider.init(slider, {
+      //   indicators: true,
+      //   height: 500,
+      //   transition: 500,
+      //   interval: 4000
+      // });
+      const slider = document.querySelector(".slider");
+      M.Slider.init(slider, {
+        height: 500,
+        transition: 500,
+        interval: 4000
+      });
+    </script>
   </body>
 </html>

@@ -1,5 +1,6 @@
 @import "utilities";
 @import "config";
+@import "mobile";
 
 * {
   box-sizing: border-box;
@@ -74,9 +75,13 @@ i {
       }
     }
 
-    .nav-left {
+    .nav-wrapper {
       display: flex;
       align-items: center;
+    }
+
+    .search-div .sidenav-trigger {
+      display: none;
     }
   }
 }
@@ -85,6 +90,10 @@ i {
 .showcase-slide {
   padding: 0 1rem;
   background-color: #fff;
+
+  h3 {
+    text-transform: uppercase;
+  }
 }
 
 // Showcase-grid
@@ -143,6 +152,10 @@ i {
   .social-link {
     text-align: center;
     margin-bottom: 2rem;
+
+    a {
+      color: #333;
+    }
   }
 
   .links {
@@ -165,6 +178,7 @@ i {
 }
 
 .footer-section {
+  margin-bottom: 2rem;
   img {
     width: 100%;
   }

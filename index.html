@@ -8,6 +8,10 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
     />
     <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
       integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
@@ -30,9 +34,10 @@
       <div class="header-main my-1">
         <section class="navbar-my">
           <div>
-            <div class="nav-left">
+            <div class="nav-wrapper">
               <img class="logo" src="img/logo.png" alt="" />
-              <ul>
+
+              <ul class="hide-on-med-and-down">
                 <li><a href="#">guitars </a></li>
                 <li><a href="#">basses</a></li>
                 <li><a href="#">acoustics</a></li>
@@ -46,7 +51,10 @@
               </ul>
             </div>
           </div>
-          <div class="serch-div">
+          <div class="search-div">
+            <a href="#" data-target="mobile-nav" class="sidenav-trigger"
+              ><i class="material-icons">menu</i></a
+            >
             <a href="" class="search-btn"
               ><i class="fas fa-search fa-2x"></i
             ></a>
@@ -54,6 +62,19 @@
         </section>
       </div>
     </header>
+
+    <ul class="sidenav" id="mobile-nav">
+      <li><a href="#">guitars </a></li>
+      <li><a href="#">basses</a></li>
+      <li><a href="#">acoustics</a></li>
+      <li><a href="#">amps</a></li>
+      <li><a href="#">effects pedals</a></li>
+      <li><a href="#">audio</a></li>
+      <li><a href="#">parts</a></li>
+      <li><a href="#">accessories</a></li>
+      <li><a href="#">lifestyle</a></li>
+      <li><a href="#">squire</a></li>
+    </ul>
 
     <section class="showcase-slide">
       <div class="my-container">
@@ -74,10 +95,13 @@
               <img src="img/slide-img2.jpg" />
               <!-- random image -->
               <div class="caption left-align">
-                <h3>Left Aligned Caption</h3>
-                <h5 class="light grey-text text-lighten-3">
-                  Here's our small slogan.
-                </h5>
+                <hp>Introducing the</hp>
+                <h3 class="light grey-text text-lighten-3">
+                  American Original 70s Telecaster® Custom
+                </h3>
+                <h3 class="light grey-text text-lighten-3">
+                  Telecaster Custom
+                </h3>
                 <button class="btn red">Learn More</button>
               </div>
             </li>
@@ -85,10 +109,10 @@
               <img src="img/slide-img3.jpg" />
               <!-- random image -->
               <div class="caption right-align">
-                <h3>Right Aligned Caption</h3>
-                <h5 class="light grey-text text-lighten-3">
-                  Here's our small slogan.
-                </h5>
+                <p>A CULT CLASSIC REBORN</p>
+                <h3 class="light grey-text text-lighten-3">
+                  Limited edition hm start
+                </h3>
                 <button class="btn red">Learn More</button>
               </div>
             </li>
@@ -96,10 +120,10 @@
               <img src="img/slide-img4.jpg" />
               <!-- random image -->
               <div class="caption center-align">
-                <h3>This is our big Tagline!</h3>
-                <h5 class="light grey-text text-lighten-3">
-                  Here's our small slogan.
-                </h5>
+                <p>25 ARTISTS EXPANDING THE WORLD OF GUITAR.</p>
+                <h3 class="light grey-text text-lighten-3">
+                  FENDER NEXT 2020
+                </h3>
                 <button class="btn red">Learn More</button>
               </div>
             </li>
@@ -107,10 +131,10 @@
               <img src="img/slide-img5.jpg" />
               <!-- random image -->
               <div class="caption center-align">
-                <h3>This is our big Tagline!</h3>
-                <h5 class="light grey-text text-lighten-3">
-                  Here's our small slogan.
-                </h5>
+                <p>THE PLAYER SERIES</p>
+                <h3 class="light grey-text text-lighten-3">
+                  LEAD II &amp; III
+                </h3>
                 <button class="btn red">Learn More</button>
               </div>
             </li>
@@ -118,10 +142,10 @@
               <img src="img/slide-img6.jpg" />
               <!-- random image -->
               <div class="caption center-align">
-                <h3>This is our big Tagline!</h3>
-                <h5 class="light grey-text text-lighten-3">
-                  Here's our small slogan.
-                </h5>
+                <p>Introducing The</p>
+                <h3 class="light grey-text text-lighten-3">
+                  AMERICAN ACOUSTASONIC<sup>&reg;️</sup> STRATOCASTER<sup>&reg;️
+                </h3>
                 <button class="btn red">Learn More</button>
               </div>
             </li>
@@ -184,12 +208,12 @@
     <section class="link">
       <div class="container">
         <div class="social-link">
-          <i class="fab fa-facebook fa-3x"></i>
-          <i class="fab fa-twitter fa-3x"></i>
-          <i class="fab fa-snapchat fa-3x"></i>
-          <i class="fab fa-pinterest fa-3x"></i>
-          <i class="fab fa-instagram fa-3x"></i>
-          <i class="fab fa-youtube fa-3x"></i>
+          <a href="#"><i class="fab fa-facebook fa-3x"></i></a>
+          <a href="#"> <i class="fab fa-twitter fa-3x"></i></a>
+          <a href="#"><i class="fab fa-snapchat fa-3x"></i></a>
+          <a href="#"> <i class="fab fa-pinterest fa-3x"></i></a>
+          <a href="#"> <i class="fab fa-instagram fa-3x"></i></a>
+          <a href="#"><i class="fab fa-youtube fa-3x"></i></a>
         </div>
 
         <div class="links">
@@ -271,6 +295,9 @@
       //   transition: 500,
       //   interval: 4000
       // });
+      const sidenav = document.querySelector(".sidenav");
+      M.Sidenav.init(sidenav, {});
+
       const slider = document.querySelector(".slider");
       M.Slider.init(slider, {
         height: 500,

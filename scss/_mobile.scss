@@ -1,0 +1,11 @@
+@media (max-width: 1000px) {
+  .search-div .sidenav-trigger {
+    display: inline-block !important;
+  }
+}
+
+@media (max-width: 700px) {
+  .grid {
+    grid-template-columns: 1fr !important;
+  }
+}
